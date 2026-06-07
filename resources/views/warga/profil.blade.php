@@ -34,6 +34,10 @@
                         <label class="form-label small fw-semibold text-secondary">Nama Lengkap</label>
                         <input type="text" name="nama_lengkap" class="form-control rounded-3" value="{{ $warga->nama_lengkap ?? Auth::user()->name }}" required>
                     </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label small fw-semibold text-secondary">Email</label>
+                        <input type="text" name="email" class="form-control rounded-3" value="{{ $warga->email ?? '' }}" required>
+                    </div>
 
                     <div class="col-md-6 mb-3">
                         <label class="form-label small fw-semibold text-secondary">Tempat Lahir</label>

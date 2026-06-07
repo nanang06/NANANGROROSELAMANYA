@@ -19,13 +19,14 @@
     <div class="card border-0 shadow-sm rounded-4">
         <div class="card-body p-0 overflow-hidden">
             <div class="table-responsive">
-                <table class="table table-hover align-middle mb-0" style="min-width: 850px;">
+                <table class="table table-hover align-middle mb-0" style="min-width: 950px;">
                     <thead class="text-white" style="background-color: #003366;">
                         <tr>
-                            <th class="ps-4 py-3" style="width: 180px;">Tanggal Pengajuan</th>
+                            <th class="ps-4 py-3" style="width: 170px;">Tanggal Pengajuan</th>
                             <th class="py-3">Jenis Surat</th>
-                            <th class="py-3 text-center" style="width: 160px;">Status</th>
-                            <th class="py-3 text-center" style="width: 220px;">Keterangan / Aksi</th>
+                            <th class="py-3 text-center" style="width: 140px;">Status</th>
+                            <th class="py-3" style="width: 250px;">Keterangan</th>
+                            <th class="py-3 text-center pe-4" style="width: 150px;">Unduh Surat</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -65,21 +66,25 @@
                                     @endif
                                 </td>
 
+                                <td>
+                                    <span class="text-muted small italic-text lh-sm d-block">
+                                        {{ $r->keterangan_admin ? '"' . $r->keterangan_admin . '"' : '-' }}
+                                    </span>
+                                </td>
+
                                 <td class="text-center pe-4">
                                     @if($r->status == 'Selesai' && $r->file_selesai)
-                                        <a href="{{ asset('storage/' . $r->file_selesai) }}" class="btn btn-warning btn-sm px-4 rounded-pill fw-bold text-dark shadow-sm d-inline-flex align-items-center gap-1 border-0" target="_blank" style="background-color: #ffcc00;">
-                                            <i class="bi bi-download"></i> Unduh Surat
+                                        <a href="{{ asset('storage/' . $r->file_selesai) }}" download class="btn btn-warning btn-sm px-3 rounded-pill fw-bold text-dark shadow-sm d-inline-flex align-items-center gap-1 border-0" style="background-color: #ffcc00;">
+                                            <i class="bi bi-download"></i> Unduh
                                         </a>
                                     @else
-                                        <span class="text-muted small italic-text">
-                                            {{ $r->keterangan_admin ?? '-' }}
-                                        </span>
+                                        <span class="text-muted small">-</span>
                                     @endif
                                 </td>
                             </tr>
                         @empty
                             <tr>
-                                <td colspan="4" class="text-center p-5 text-muted bg-white rounded-bottom-4">
+                                <td colspan="5" class="text-center p-5 text-muted bg-white rounded-bottom-4">
                                     <i class="bi bi-clock-history text-muted mb-3 d-block" style="font-size: 3.5rem;"></i>
                                     <h6 class="fw-bold text-secondary mb-1">Belum Ada Riwayat</h6>
                                     <p class="small text-muted mb-0">Belum ada riwayat pengajuan berkas dari akun Anda.</p>
@@ -114,6 +119,9 @@
     .spin-icon {
         display: inline-block;
         animation: spin 4s linear infinite;
+    }
+    .lh-sm {
+        line-height: 1.3 !important;
     }
 </style>
 @endsection

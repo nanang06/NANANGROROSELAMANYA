@@ -20,10 +20,11 @@ class WargaController extends Controller
         $warga = Warga::where('nik', Auth::user()->nik)->first();
         if (!$warga) return false;
 
-        // Cukup cek kolom teks utama. Jika tempat lahir atau alamat masih berisi '-', berarti profil BELUM LENGKAP
+        // 🛠️ PERBAIKAN: Menambahkan pengecekan email agar sistem email notifikasi bisa berjalan
         return !empty($warga->tempat_lahir) && $warga->tempat_lahir !== '-' &&
             !empty($warga->tanggal_lahir) &&
             !empty($warga->jenis_kelamin) &&
+            !empty($warga->email) && $warga->email !== '-' && // Pengecekan Email
             !empty($warga->rt) && $warga->rt !== '-' &&
             !empty($warga->rw) && $warga->rw !== '-' &&
             !empty($warga->alamat_lengkap) && $warga->alamat_lengkap !== '-';
@@ -34,11 +35,12 @@ class WargaController extends Controller
      */
     public function dashboard()
     {
-        // Menggunakan salah satu nilai ENUM resmi ('Laki-laki') agar database tidak menolak saat pendaftaran pertama
+        // 🛠️ PERBAIKAN: Menambahkan default email '-' saat pertama kali login
         $warga = Warga::firstOrCreate(
             ['nik' => Auth::user()->nik],
             [
                 'nama_lengkap'    => Auth::user()->name ?? 'Warga Baru',
+                'email'           => '-', // Default email kosong
                 'tempat_lahir'    => '-',
                 'tanggal_lahir'   => date('Y-m-d'),
                 'jenis_kelamin'   => 'Laki-laki',
@@ -65,11 +67,12 @@ class WargaController extends Controller
      */
     public function profil()
     {
-        // Penerapan aman yang sama di halaman profil biodata
+        // 🛠️ PERBAIKAN: Menambahkan default email '-' juga di sini
         $warga = Warga::firstOrCreate(
             ['nik' => Auth::user()->nik],
             [
                 'nama_lengkap'    => Auth::user()->name ?? 'Warga Baru',
+                'email'           => '-', // Default email kosong
                 'tempat_lahir'    => '-',
                 'tanggal_lahir'   => date('Y-m-d'),
                 'jenis_kelamin'   => 'Laki-laki',
@@ -154,8 +157,10 @@ class WargaController extends Controller
 
     public function updateProfil(Request $request)
     {
+        // 🛠️ PERBAIKAN: Validasi untuk kolom email wajib diisi
         $request->validate([
             'nama_lengkap'    => 'required|string|max:255',
+            'email'           => 'required|email|max:255', // Validasi email
             'tempat_lahir'    => 'required|string',
             'tanggal_lahir'   => 'required|date',
             'jenis_kelamin'   => 'required|in:Laki-laki,Perempuan',

@@ -14,23 +14,17 @@ class AdminDashboardController extends Controller
      */
     public function index()
     {
-        // 1. Hitung total warga yang aktif terdaftar di sistem
-        // Laravel secara otomatis hanya menghitung warga yang belum dihapus (deleted_at IS NULL)
-        $totalWarga = Warga::count();
+        // 1. Hitung total warga yang terdaftar di sistem
+        // Hanya menghitung warga yang akun user-nya memiliki role 'warga' (Akun Admin tidak ikut dihitung)
+        $totalWarga = Warga::whereHas('user', function ($query) {
+            $query->where('role', 'warga');
+        })->count();
 
         // 2. Hitung statistik pengajuan surat berdasarkan statusnya
-        // 🛠️ PERBAIKAN: Ditambahkan filter whereHas agar hanya menghitung surat dari warga yang MASIH AKTIF
-        $suratPending = Pengajuan::whereHas('warga', function ($query) {
-            $query->whereNull('wargas.deleted_at');
-        })->where('status', 'Pending')->count();
-
-        $suratProses  = Pengajuan::whereHas('warga', function ($query) {
-            $query->whereNull('wargas.deleted_at');
-        })->where('status', 'Proses')->count();
-
-        $suratSelesai = Pengajuan::whereHas('warga', function ($query) {
-            $query->whereNull('wargas.deleted_at');
-        })->where('status', 'Selesai')->count();
+        // Query kembali bersih dan super cepat karena riwayat dari warga yang dihapus sudah ikut musnah bersih
+        $suratPending = Pengajuan::where('status', 'Pending')->count();
+        $suratProses  = Pengajuan::where('status', 'Proses')->count();
+        $suratSelesai = Pengajuan::where('status', 'Selesai')->count();
 
         // 3. Hitung total jenis layanan surat yang tersedia
         $totalJenisSurat = JenisSurat::count();
