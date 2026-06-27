@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warga - SIP CIPULIR</title>
+    <title>Warga - SIP PESANGGRAHAN</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
@@ -24,7 +24,7 @@
             <div class="col-md-3 col-lg-2 p-3 sidebar position-fixed d-flex flex-column">
                 <div class="sidebar-brand text-center pt-3 pb-4 mb-4">
                     <i class="bi bi-shield-check text-warning mb-2" style="font-size: 3rem; display: block;"></i>
-                    <h5 class="fw-bold text-white mb-1">SIP CIPULIR</h5>
+                    <h5 class="fw-bold text-white mb-1">SIP PESANGGRAHAN</h5>
                     <small class="text-white opacity-50 text-uppercase tracking-wider" style="font-size: 0.75rem; font-weight: 600;">Panel Warga</small>
                 </div>
 

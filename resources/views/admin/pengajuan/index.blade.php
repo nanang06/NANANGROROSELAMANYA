@@ -5,7 +5,7 @@
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
             <h4 class="fw-bold mb-1" style="color: #003366;">Manajemen Pengajuan Surat</h4>
-            <p class="text-muted small mb-0">Verifikasi berkas permohonan surat pelayanan masyarakat Kelurahan Cipulir secara berkala.</p>
+            <p class="text-muted small mb-0">Verifikasi berkas permohonan surat pelayanan masyarakat Kelurahan Pesanggrahan secara berkala.</p>
         </div>
     </div>
 

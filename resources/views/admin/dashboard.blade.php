@@ -5,7 +5,7 @@
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
             <h4 class="fw-bold mb-1" style="color: #003366;">Dashboard Utama Admin</h4>
-            <p class="text-muted small mb-0">Selamat datang kembali! Berikut adalah ringkasan data pelayanan SIP CIPULIR saat ini.</p>
+            <p class="text-muted small mb-0">Selamat datang kembali! Berikut adalah ringkasan data pelayanan SIP PESANGGRAHAN saat ini.</p>
         </div>
         <span class="badge p-2 rounded-pill px-3 shadow-sm text-dark" style="background-color: #ffcc00; font-weight: 600;">
             <i class="bi bi-calendar3 me-1"></i> Hari ini: {{ date('d M Y') }}
@@ -79,7 +79,7 @@
             <div class="card border-0 shadow-sm rounded-4 bg-white p-4">
                 <h5 class="fw-bold mb-3" style="color: #003366;"><i class="bi bi-lightning-charge-fill text-warning me-2"></i>Panduan Operasional Staf</h5>
                 <p class="text-secondary small mb-4" style="line-height: 1.6;">
-                    Sebagai Admin Kelurahan Cipulir, Anda bertanggung jawab penuh untuk memverifikasi keabsahan dokumen persyaratan yang diunggah oleh warga. Pastikan untuk menolak berkas jika resolusi gambar buram atau tidak terbaca, dan segera unggah dokumen hasil cetak resmi format PDF jika permohonan surat dinyatakan **Selesai**.
+                    Sebagai Admin Kelurahan Pesanggrahan, Anda bertanggung jawab penuh untuk memverifikasi keabsahan dokumen persyaratan yang diunggah oleh warga. Pastikan untuk menolak berkas jika resolusi gambar buram atau tidak terbaca, dan segera unggah dokumen hasil cetak resmi format PDF jika permohonan surat dinyatakan **Selesai**.
                 </p>
                 <div class="d-flex gap-2 flex-wrap">
                     <a href="{{ route('admin.pengajuan.index') }}" class="btn btn-primary btn-sm rounded-pill px-4" style="background-color: #003366; border: none;">

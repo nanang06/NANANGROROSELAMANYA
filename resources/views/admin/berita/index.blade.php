@@ -5,7 +5,7 @@
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
             <h4 class="fw-bold mb-1" style="color: #003366;">Manajemen Berita Kelurahan</h4>
-            <p class="text-muted small mb-0">Kelola publikasi berita, artikel kegiatan, dan informasi penting untuk warga Cipulir.</p>
+            <p class="text-muted small mb-0">Kelola publikasi berita, artikel kegiatan, dan informasi penting untuk warga Pesanggrahan.</p>
         </div>
         <button class="btn text-dark fw-bold rounded-pill px-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalBerita" style="background-color: #ffcc00; border: none;">
             <i class="bi bi-plus-lg me-1"></i> Tulis Berita

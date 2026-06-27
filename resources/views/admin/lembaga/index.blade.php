@@ -5,7 +5,7 @@
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
             <h4 class="fw-bold mb-1" style="color: #003366;">Lembaga Kemasyarakatan</h4>
-            <p class="text-muted small mb-0">Kelola daftar organisasi kemitraan dan lembaga masyarakat resmi di Kelurahan Cipulir.</p>
+            <p class="text-muted small mb-0">Kelola daftar organisasi kemitraan dan lembaga masyarakat resmi di Kelurahan Pesanggrahan.</p>
         </div>
         <button class="btn text-dark fw-bold rounded-pill px-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalTambahLembaga" style="background-color: #ffcc00; border: none;">
             <i class="bi bi-plus-lg me-1"></i> Tambah Lembaga

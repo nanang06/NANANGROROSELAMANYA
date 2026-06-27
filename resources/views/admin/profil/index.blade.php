@@ -5,7 +5,7 @@
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
             <h4 class="fw-bold mb-1" style="color: #003366;">Edit Profil Kelurahan</h4>
-            <p class="text-muted small mb-0">Perbarui narasi sejarah, visi misi, dan informasi publik Kelurahan Cipulir melalui text editor resmi.</p>
+            <p class="text-muted small mb-0">Perbarui narasi sejarah, visi misi, dan informasi publik Kelurahan Pesanggrahan melalui text editor resmi.</p>
         </div>
     </div>
 

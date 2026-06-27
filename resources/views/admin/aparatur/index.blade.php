@@ -5,7 +5,7 @@
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
             <h4 class="fw-bold mb-1" style="color: #003366;">Manajemen Aparatur Kelurahan</h4>
-            <p class="text-muted small mb-0">Kelola susunan pejabat dan staf struktur organisasi pelayanan Kelurahan Cipulir.</p>
+            <p class="text-muted small mb-0">Kelola susunan pejabat dan staf struktur organisasi pelayanan Kelurahan Pesanggrahan.</p>
         </div>
         <button class="btn text-dark fw-bold rounded-pill px-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#tambahModal" style="background-color: #ffcc00; border: none;">
             <i class="bi bi-person-plus-fill me-1"></i> Tambah Aparatur
@@ -163,7 +163,7 @@
                 </div>
                 <div class="mb-3">
                     <label class="form-label small fw-semibold text-secondary">Jabatan</label>
-                    <input type="text" name="jabatan" class="form-control rounded-3 p-2.5" required placeholder="Contoh: Lurah Cipulir">
+                    <input type="text" name="jabatan" class="form-control rounded-3 p-2.5" required placeholder="Contoh: Lurah Pesanggrahan">
                 </div>
                 <div class="mb-3">
                     <label class="form-label small fw-semibold text-secondary">Foto <small class="text-muted">(Opsional, Max 2MB)</small></label>

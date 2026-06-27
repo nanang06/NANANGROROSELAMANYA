@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeri Foto - SIP CIPULIR</title>
+    <title>Galeri Foto - SIP PESANGGRAHAN</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -48,7 +48,7 @@
         <div class="container">
             <a class="navbar-brand d-flex align-items-center text-decoration-none" href="{{ route('publik.home') }}">
                 <i class="bi bi-shield-check me-2 text-warning fs-3"></i>
-                <span>SIP CIPULIR</span>
+                <span>SIP PESANGGRAHAN</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -95,7 +95,7 @@
     <div class="page-header shadow-sm">
         <div class="container">
             <h1 class="display-5 fw-bold mb-2">Galeri Kegiatan</h1>
-            <p class="lead mb-0 opacity-75">Dokumentasi lensa aktivitas dan program kerja Pemerintah Kelurahan Cipulir</p>
+            <p class="lead mb-0 opacity-75">Dokumentasi lensa aktivitas dan program kerja Pemerintah Kelurahan Pesanggrahan</p>
         </div>
     </div>
 
@@ -132,7 +132,7 @@
 
     <footer class="py-5 text-white shadow-lg mt-auto" style="background: #001a33;">
         <div class="container text-center small opacity-50">
-            <p class="mb-0">&copy; 2026 Pemerintah Kelurahan Cipulir. All rights reserved.</p>
+            <p class="mb-0">&copy; 2026 Pemerintah Kelurahan Pesanggrahan. All rights reserved.</p>
         </div>
     </footer>
 

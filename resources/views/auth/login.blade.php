@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - SIP CIPULIR</title>
+    <title>Login - SIP PESANGGRAHAN</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -92,7 +92,7 @@
     <div class="login-card">
         <div class="login-header">
             <i class="bi bi-shield-check text-warning mb-2" style="font-size: 3.5rem;"></i>
-            <h3 class="fw-bold mb-1" style="color: #003366;">SIP CIPULIR</h3>
+            <h3 class="fw-bold mb-1" style="color: #003366;">SIP PESANGGRAHAN</h3>
             <p class="text-muted small">Sistem Informasi Pelayanan</p>
         </div>
 

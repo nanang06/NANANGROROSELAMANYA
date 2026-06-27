@@ -5,7 +5,7 @@
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
             <h4 class="fw-bold mb-1" style="color: #003366;">Manajemen Data Warga</h4>
-            <p class="text-muted small mb-0">Berikut adalah daftar seluruh masyarakat Kelurahan Cipulir yang memiliki akun di sistem SIP CIPULIR.</p>
+            <p class="text-muted small mb-0">Berikut adalah daftar seluruh masyarakat Kelurahan Pesanggrahan yang memiliki akun di sistem SIP PESANGGRAHAN.</p>
         </div>
     </div>
 

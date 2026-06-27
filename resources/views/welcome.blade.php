@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Sistem Informasi Pelayanan - Kelurahan Cipulir</title>
+    <title>Sistem Informasi Pelayanan - Kelurahan Pesanggrahan</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -57,7 +57,7 @@
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="{{ route('publik.home') }}">
                 <i class="bi bi-shield-check me-2 text-warning fs-3"></i>
-                <span>SIP CIPULIR</span>
+                <span>SIP PESANGGRAHAN</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -111,7 +111,7 @@
 
         <header class="hero">
             <div class="container">
-                <h1 class="mb-3 animate__animated animate__fadeIn">Website Resmi <br>Kelurahan Cipulir</h1>
+                <h1 class="mb-3 animate__animated animate__fadeIn">Website Resmi <br>Kelurahan Pesanggrahan</h1>
                 <p class="mb-4 opacity-75">Melayani Kebutuhan Administrasi Masyarakat Secara Cepat & Digital.</p>
                 <a href="#layanan" class="btn btn-warning btn-lg px-5 py-3 fw-bold rounded-pill shadow">Mulai Layanan Surat</a>
             </div>
@@ -133,11 +133,11 @@
                         <i class="bi bi-quote fs-1 text-primary opacity-25"></i>
                         <h2 class="fw-bold mb-3" style="color: #003366;">Kata Sambutan</h2>
                         <p class="lead text-muted fst-italic">
-                            "Selamat datang di website resmi Kelurahan Cipulir. Kami sangat bangga dapat menyambut Anda di website ini dan berbagi visi kami untuk membuat kelurahan ini menjadi tempat yang lebih baik. Kami akan terus bekerja keras untuk meningkatkan pelayanan publik, transparan, and mudah diakses. Terima kasih atas dukungan Anda."
+                            "Selamat datang di website resmi Kelurahan Pesanggrahan. Kami sangat bangga dapat menyambut Anda di website ini dan berbagi visi kami untuk membuat kelurahan ini menjadi tempat yang lebih baik. Kami akan terus bekerja keras untuk meningkatkan pelayanan publik, transparan, dan mudah diakses. Terima kasih atas dukungan Anda."
                         </p>
                         <div class="mt-4">
                             <h5 class="fw-bold mb-0 text-primary">{{ $lurah->nama ?? 'Nama Lurah Belum Diisi' }}</h5>
-                            <p class="text-muted">{{ $lurah->jabatan ?? 'Lurah Cipulir' }}</p>
+                            <p class="text-muted">{{ $lurah->jabatan ?? 'Lurah Pesanggrahan' }}</p>
                         </div>
                     </div>
                 </div>
@@ -203,7 +203,7 @@
                             <img src="https://images.unsplash.com/photo-1555529669-e69e730f162b?q=80&w=500&auto=format&fit=crop" class="card-img-top" style="height: 250px; object-fit: cover;">
                             <div class="card-body p-4 text-center">
                                 <h4 class="fw-bold">Pemberdayaan UMKM</h4>
-                                <p class="text-muted small">Mendukung pertumbuhan ekonomi lokal melalui digitalisasi produk unggulan masyarakat Cipulir.</p>
+                                <p class="text-muted small">Mendukung pertumbuhan ekonomi lokal melalui digitalisasi produk unggulan masyarakat Pesanggrahan.</p>
                                 <a href="{{ route('publik.umkm') }}" class="btn btn-outline-primary px-4 rounded-pill">Lihat Produk Lokal</a>
                             </div>
                         </div>
@@ -212,8 +212,8 @@
                         <div class="card card-potensi shadow-sm h-100">
                             <img src="https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?q=80&w=500&auto=format&fit=crop" class="card-img-top" style="height: 250px; object-fit: cover;">
                             <div class="card-body p-4 text-center">
-                                <h4 class="fw-bold">Pariwisata Cipulir</h4>
-                                <p class="text-muted small">Eksplorasi keindahan dan tempat-tempat bersejarah yang menjadi ikon di wilayah Kelurahan Cipulir.</p>
+                                <h4 class="fw-bold">Pariwisata Pesanggrahan</h4>
+                                <p class="text-muted small">Eksplorasi keindahan dan tempat-tempat bersejarah yang menjadi ikon di wilayah Kelurahan Pesanggrahan.</p>
                                 <a href="{{ route('publik.wisata') }}" class="btn btn-outline-primary px-4 rounded-pill">Jelajahi Wisata</a>
                             </div>
                         </div>
@@ -253,19 +253,19 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-md-6">
-                    <h4 class="fw-bold text-warning mb-3">SIP CIPULIR</h4>
-                    <p class="opacity-75">Sistem Informasi Pelayanan Kelurahan Cipulir adalah inovasi untuk mewujudkan pelayanan publik yang modern dan transparan.</p>
+                    <h4 class="fw-bold text-warning mb-3">SIP PESANGGRAHAN</h4>
+                    <p class="opacity-75">Sistem Informasi Pelayanan Kelurahan Pesanggrahan adalah inovasi untuk mewujudkan pelayanan publik yang modern dan transparan.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <h6 class="fw-bold mb-2">Alamat Kantor</h6>
-                    <p class="small opacity-50">Jl. Ciledug Raya, Cipulir, Kec. Kby. Lama, Kota Jakarta Selatan, DKI Jakarta</p>
+                    <p class="small opacity-50">Jl. Pesanggrahan Indah No.2 5, RT.5/RW.3, Pesanggrahan, Kec. Pesanggrahan, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12320</p>
                     <div class="fs-4 d-flex gap-3 justify-content-md-end text-warning">
                         <i class="bi bi-facebook"></i><i class="bi bi-instagram"></i><i class="bi bi-youtube"></i>
                     </div>
                 </div>
             </div>
             <hr class="my-4 opacity-25">
-            <p class="text-center small opacity-50 mb-0">&copy; 2026 Pemerintah Kelurahan Cipulir. All rights reserved.</p>
+            <p class="text-center small opacity-50 mb-0">&copy; 2026 Pemerintah Kelurahan Pesanggrahan. All rights reserved.</p>
         </div>
     </footer>
 

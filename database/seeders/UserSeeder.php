@@ -15,7 +15,7 @@ class UserSeeder extends Seeder
     {
         // 1. Membuat Akun Admin Kelurahan
         User::create([
-            'nik' => 'admincipulir', // Kita pakai string khusus agar mudah diingat
+            'nik' => 'admin', // Kita pakai string khusus agar mudah diingat
             'password' => Hash::make('admin123'), // Hash::make berfungsi mengenkripsi password
             'role' => 'admin',
         ]);

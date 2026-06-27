@@ -6,7 +6,7 @@
 <body style="font-family: sans-serif; color: #333; line-height: 1.6;">
     <div style="max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e3e3e3; border-radius: 10px;">
         <h2 style="color: #003366;">Halo, {{ $pengajuan->warga->nama_lengkap }}!</h2>
-        <p>Kabar baik! Permohonan dokumen Anda pada sistem <strong>SIP CIPULIR</strong> telah selesai diproses dan diterbitkan oleh Admin Kelurahan Cipulir.</p>
+        <p>Kabar baik! Permohonan dokumen Anda pada sistem <strong>SIP PESANGGRAHAN</strong> telah selesai diproses dan diterbitkan oleh Admin Kelurahan Pesanggrahan.</p>
 
         <table style="width: 100%; margin: 20px 0; border-collapse: collapse;">
             <tr>
@@ -19,9 +19,9 @@
             </tr>
         </table>
 
-        <p>Silakan login ke akun SIP CIPULIR Anda dan masuk ke menu <strong>Riwayat Pengajuan Surat</strong> untuk mengunduh dokumen PDF resmi Anda.</p>
+        <p>Silakan login ke akun SIP PESANGGRAHAN Anda dan masuk ke menu <strong>Riwayat Pengajuan Surat</strong> untuk mengunduh dokumen PDF resmi Anda.</p>
 
-        <p style="margin-top: 30px;">Salam hangat,<br><strong>Aparatur Kelurahan Cipulir</strong></p>
+        <p style="margin-top: 30px;">Salam hangat,<br><strong>Aparatur Kelurahan Pesanggrahan</strong></p>
     </div>
 </body>
 </html>

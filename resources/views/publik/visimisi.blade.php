@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visi & Misi - SIP CIPULIR</title>
+    <title>Visi & Misi - SIP PESANGGRAHAN</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     <nav class="navbar navbar-expand-lg shadow sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center text-decoration-none" href="{{ route('publik.home') }}">
-                <i class="bi bi-shield-check me-2 text-warning fs-3"></i><span>SIP CIPULIR</span>
+                <i class="bi bi-shield-check me-2 text-warning fs-3"></i><span>SIP PESANGGRAHAN</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -74,7 +74,7 @@
     <div class="page-header shadow-sm">
         <div class="container">
             <h1 class="display-5 fw-bold mb-3">Visi & Misi</h1>
-            <p class="lead mb-0 opacity-75">Arah dan Tujuan Pembangunan Kelurahan Cipulir</p>
+            <p class="lead mb-0 opacity-75">Arah dan Tujuan Pembangunan Kelurahan Pesanggrahan</p>
         </div>
     </div>
 
@@ -98,19 +98,19 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-md-6">
-                    <h4 class="fw-bold text-warning mb-3">SIP CIPULIR</h4>
-                    <p class="opacity-75">Sistem Informasi Pelayanan Kelurahan Cipulir adalah inovasi untuk mewujudkan pelayanan publik yang modern dan transparan.</p>
+                    <h4 class="fw-bold text-warning mb-3">SIP PESANGGRAHAN</h4>
+                    <p class="opacity-75">Sistem Informasi Pelayanan Kelurahan Pesanggrahan adalah inovasi untuk mewujudkan pelayanan publik yang modern dan transparan.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <h6 class="fw-bold mb-2">Alamat Kantor</h6>
-                    <p class="small opacity-50">Jl. Ciledug Raya, Cipulir, Kec. Kby. Lama, Kota Jakarta Selatan, DKI Jakarta</p>
+                    <p class="small opacity-50">Jl. Pesanggrahan Indah No.2 5, RT.5/RW.3, Pesanggrahan, Kec. Pesanggrahan, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12320</p>
                     <div class="fs-4 d-flex gap-3 justify-content-md-end text-warning">
                         <i class="bi bi-facebook"></i><i class="bi bi-instagram"></i><i class="bi bi-youtube"></i>
                     </div>
                 </div>
             </div>
             <hr class="my-4 opacity-25">
-            <p class="text-center small opacity-50 mb-0">&copy; 2026 Pemerintah Kelurahan Cipulir. All rights reserved.</p>
+            <p class="text-center small opacity-50 mb-0">&copy; 2026 Pemerintah Kelurahan Pesanggrahan. All rights reserved.</p>
         </div>
     </footer>
 

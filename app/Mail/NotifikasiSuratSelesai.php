@@ -24,7 +24,7 @@ class NotifikasiSuratSelesai extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'SIP CIPULIR - Surat Layanan Anda Telah Selesai Terbit! 🎉',
+            subject: 'SIP PESANGGRAHAN - Surat Layanan Anda Telah Selesai Terbit! 🎉',
         );
     }
 
